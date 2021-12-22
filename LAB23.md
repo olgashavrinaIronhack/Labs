@@ -6,13 +6,11 @@ select * from interview where person_id='14887';
 select * from get_fit_now_check_in where check_in_date='20180109' and membership_id like '%48Z%';
 select * from get_fit_now_member where id like '%48Z%';
 select * from drivers_license where plate_number like '%H42W%';
-select * from person where license_id='423327'
+select * from person where license_id='423327';
 select * from interview where person_id='67318';  
 select person_id,license_id,event_name,eye_color, hair_color, gender, height, car_model, car_make from facebook_event_checkin
 left outer join person on facebook_event_checkin.person_id=person.id 
 left join drivers_license on person.license_id=drivers_license.id where event_name='SQL Symphony Concert' and car_make='Tesla';
 
-
-![image](https://user-images.githubusercontent.com/93222268/147087896-d2db7de3-1957-466a-8d6c-1ba158646e0c.png)
 
 Murder is Jeremy Bowers / Brain behind Miranda Priestly
